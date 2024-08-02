@@ -1,0 +1,550 @@
+/*Estilo Gegal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background-color: #fffffffa;
+    height: 100vh;
+}
+.interface{
+    margin: 0 auto;
+
+}
+.flex{
+    display: flex;
+}
+
+.btn-redes button{
+    margin-top: 25px;
+    transition: .2s;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #7538b4;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-contato button{
+    
+    transition: .2s;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #7538b4;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+h2.titulo{
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+
+}
+h2.titulo span{
+    color: #7538b4;
+}
+
+header .interface{
+
+    position: fixed;
+    Width:100%;
+    background-color: white;
+    z-index: 100; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing:border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao header */
+    
+}
+
+
+header a{
+    color: #7538b4;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+   
+    
+
+}
+header nav.menu-desktop a:hover{
+    
+    transform: scale(1.05);
+    color:#290e44   
+    
+    
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+header nav.menu-desktop li{
+    display: inline-block;
+    padding: 0 40px;
+}
+.btn-contato {
+    margin-right: 100px; /* Espaçamento entre o botão e o menu */
+
+}
+
+button:hover{
+
+    box-shadow: 0px 0px 8px #bc7bfc;
+    transform: scale(1.05);
+
+}
+
+/*ESTILO MENU MOBILE */
+
+
+.btn-abrirmenu i{
+    color: #7538b4;
+    font-size: 40px;
+}
+.menu-mobile{
+    background-color: #ebebeb;
+    height: 100vh;
+   position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile .flex{
+    display: flex;
+    flex-direction: column;
+}
+.menu-mobile nav ul{
+    text-align: right;
+    
+
+}
+.menu-mobile nav ul li a {
+    text-align: right;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 8%;
+    display: block;
+
+}
+.overlei-menu{
+    background-color: #000000bb;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: n;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #7538b4;
+    color: #ffffff;
+
+}
+.menu-mobile .btn-close{
+    padding: 20px 5%;
+    
+}
+.menu-mobile .btn-close i{
+    color: #7538b4;
+    font-size: 30px;
+}
+.overlei-menu{
+    background-color: #30303077;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 8880;
+  
+
+    
+}
+/* ESTILO DO TOPO SO SITE*/
+
+section.topo-do-site{
+    padding: 100px 4%;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+
+}
+.topo-do-site h1{
+    color: #000000;
+    font-size: 48px;
+    
+}
+
+.txt-topo-site h1 span{
+    position: relative;
+}
+.txt-topo-site span::before{
+    content: "";
+    color: #7538b4;
+    animation: palavra 20s infinite;
+}
+
+.txt-topo-site span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #7538b4;
+    right: -10px;
+    animation: cursor .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 3px);
+    background-color: #ffffff;
+}
+
+@keyframes digita{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 3px);
+    }
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid #ffffff;
+    }
+}
+
+@keyframes palavra{
+    0%, 100%{
+        content: " Kelly Crisitna.";
+    }
+
+}
+.topo-do-site .txt-topo-site h1 span{
+    color: #7538b4;
+}
+.topo-do-site .txt-topo-site p{
+    margin: 40px 0;
+
+}
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO SOBRE */
+
+section.sobre{
+    padding: 130px 4%;
+    background-color: #f7f5f5c9;
+}
+.sobre .txt-sobre .flex{
+    
+    gap: 60px;
+}
+.sobre .txt-sobre h2{
+
+    font-size: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #7538b4;
+}
+.sobre .txt-sobre p{
+    margin: 20px;
+    text-align: justify;
+}
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius :50% ;
+    border: none;
+    color: #ffffff;
+    background-color: #7538b4;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transform: scale(1.05);
+
+}
+
+
+
+/* ESTILO DAS SKILLS*/
+section.especialidades{
+    
+    padding: 50px 4%;   
+    margin-bottom: 100px;
+    
+    
+}
+section.especialidades .flex{
+    gap: 100px;
+    justify-content: center;
+
+    
+
+}
+.especialidades .skills-box{
+    background-color: #ffffff;
+    padding: 40px;  
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.5s;
+    
+}
+.especialidades .skills-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #bb7bfc98;
+}
+
+.especialidades .skills-box i{
+    font-size: 58px;
+    color: #7538b4;
+}
+.especialidades .skills-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO MEU PORTIFOLIO*/
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 30px 5px #e4e4e4a4;
+}
+section.portifolio .flex{
+    justify-content: space-around;
+   
+    
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #7538b4;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+
+}
+/* ESTILO MODAL*/
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1a191988;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999;
+
+
+}
+.modal{
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #ffffffd0;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px; 
+
+
+}
+.fechar{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+.janela-modal.abrir{
+    display: flex;
+}
+
+@keyframes abrirmodal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+}
+.abrir .modal{
+    animation: abrirmodal 0.5s;
+}
+ /* ESTILO CONTATO*/
+ section.contato{
+
+    padding: 50px 4%;
+    position: relative;
+    text-align: center;
+    background-color: #f7f5f5c9;
+    display: flex;
+    
+    
+}
+.contato .txt-contato{
+    gap: 60px;
+    padding: 30px;
+    font-size: 17px;
+}
+.contato .txt-contato .btn-contato button{
+
+    
+    color: #ffffff;
+    background-color: #7538b4;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 25px 5px;
+    transform: scale(1.05);
+
+}
+
+/* ESTILO FOOTER*/
+footer{
+    padding: 10px 4%;
+    color: #ffffff;
+    display: flex;
+
+    background-color: #7538b4;
+}
+@media screen and (max-width: 1020px){
+    /* classes gerais */
+    .flex{
+        flex-direction: column-reverse;
+
+    }
+    .portifolio .flex{
+        flex-direction: column-reverse;
+    }
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    h1.titulo{
+        font-size: 10px;
+    }
+
+    /* topo do site */
+
+    .topo-do-site h1{
+        color: #000000;
+        font-size: 20px;
+        
+    } 
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+    .topo-do-site .img-topo-site img{
+        width: 250px;
+    }
+
+    
+    /* ESTILO DAS SKILLS*/
+    section.especialidades{
+    
+        padding: 50px 8%;   
+        margin-bottom: 100px;
+    
+    
+    }
+    section.especialidades .flex{
+        gap: 1px;
+        justify-content: center;
+        text-align: center;
+
+
+    
+
+    }
+    /* ESTILO MEU PORTIFOLIO*/
+    section.portifolio{
+        padding: 80px 8%;
+        
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        
+    }
+    section.portifolio .flex{
+        gap: 60px;
+       
+        
+    }
+    /*MODAL */
+    .fechar{
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 0;
+        background-color: red;
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .janela-modal{
+
+        padding: 80px 8%;
+        
+    
+    }
+    .modal{
+        
+
+        padding: 85px;
+        
+     }
+   
+ }
